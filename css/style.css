@@ -1,0 +1,54 @@
+#wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 5% 35% 45% 20%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'hd hd hd'
+    'nv nv nv'
+    'img1 mn img3'
+    'img1 img2 img3'
+    'ft ft ft'
+    ;
+}
+header {
+    grid-area: hd;
+    background-color: aliceblue;
+}
+nav {
+    grid-area: nv;
+    background-color: blueviolet;
+}
+main {
+    grid-area: mn;
+    background-color: aquamarine;
+}
+main p {
+    margin-left: 15px;
+}
+#img1 {
+    grid-area: img1;
+    background-color: rgb(225, 0, 0);
+}
+#img1 img {
+    height: 100%;
+    margin-left: 101px;
+}
+#img2 {
+    grid-area: img2;
+    background-color: rgb(212, 99, 99);
+}
+#img2 img {
+    height: 100%;
+}
+#img3 {
+    grid-area: img3;
+    background-color: rgb(255, 174, 174);
+}
+#img3 img {
+    height: 100%;
+}
+footer {
+    grid-area: ft;
+    background-color: blanchedalmond;
+}
