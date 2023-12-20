@@ -1,37 +1,52 @@
 body {
     background-color: rgb(248, 233, 206);
 }
+
 #wrapper {
     display: grid;
     height: 100vh;
-    grid-template-rows: 15% 5% 35% 45% 20%;
+    grid-template-rows: 13% 8% 35% 45% 50%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    'hd hd hd hd hd'
-    'nv nv nv nv nv'
-    'img1 mn mn mn img5'
-    'img1 img2 img4 img3 img5'
-    'ft ft ft ft ft'
+    grid-template-areas:
+        'hd hd hd hd hd'
+        'nv nv nv nv nv'
+        'img1 mn mn mn img5'
+        'img1 img2 img4 img3 img5'
+        'ft ft ft ft ft'
     ;
 }
+
 header {
     grid-area: hd;
+    background-color: rgb(249, 206, 127);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
 header h1 {
-color: rgba(0, 0, 0, 0.925);
-font-family:Georgia, 'Times New Roman', Times, serif;
-font-size: 60px;
-text-align: center;
-margin-top: auto;
+    color: rgba(0, 0, 0, 0.925);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
 }
+
 nav {
     grid-area: nv;
+    background-color: rgb(253, 222, 166);
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
 nav a {
-color: black;
-text-decoration: none;
-font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
 }
+
 button {
     background-color: rgb(255, 185, 56);
     height: 40px;
@@ -40,10 +55,12 @@ button {
     border: none;
     margin-left: 19.5rem;
 }
+
 button:hover {
     border-style: solid;
     border-color: rgb(195, 128, 3);
 }
+
 button:active {
     background-color: rgb(255, 166, 0);
 
@@ -52,6 +69,7 @@ button:active {
 main {
     grid-area: mn;
 }
+
 main p {
     text-align: center;
     font-size: 45px;
@@ -59,60 +77,206 @@ main p {
     font-weight: 600;
     margin-left: 60px;
     margin-right: 60px;
-    margin-top:;
+    margin-top: ;
 }
+
 #p1 {
     color: rgba(0, 0, 0, 0.851);
     margin-top: px;
 
 }
+
 #p2 {
     color: rgb(248, 165, 40);
     margin-bottom: 10px;
 }
+
 #img1 {
     grid-area: img1;
 }
+
 #img1 img {
     width: 95%;
     margin-top: 100px;
 }
+
 #img2 {
     grid-area: img2;
 }
+
 #img2 img {
     width: 100%;
     height: 50%;
 }
+
 #img3 {
     grid-area: img3;
 }
+
 #img3 img {
     width: 100%;
     height: 54%;
 }
+
 #img4 {
     grid-area: img4;
 }
+
 #img4 img {
     width: 83%;
     margin-top: 40px;
     margin-left: 25px;
 }
+
 #img5 {
     grid-area: img5;
 }
+
 #img5 img {
     width: 95%;
     height: 70%;
     margin-top: 100px;
     margin-left: 16px;
 }
+
 img {
     border-radius: 20px;
     box-shadow: 0 0 20px 8px rgb(242, 219, 181);
 }
+
 footer {
     grid-area: ft;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(251, 224, 173);
+    display: flex;
+    align-items: center;
+}
+
+#Kontakta_oss {
+    margin-left: 7rem;
+    margin-bottom: 16rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#Om_oss {
+    margin-left: 13rem;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    margin-left: 1px;
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:active {
+    font-size: 15px;
+}
+
+#Socialt {
+    margin-left: 13rem;
+    margin-bottom: 14.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer h6 {
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: -1px;
+}
+
+#Nyhetsbrev {
+    margin-left: 13rem;
+    margin-bottom: 13.5rem;
+}
+
+#Nyhetsbrev p {
+    margin-left: px;
+    padding: -5px;
+    margin-top: -1px;
+}
+
+#Nyhetsbrev input {
+    font-size: 17px;
+    padding: 12px;
+    border: none;
+}
+
+#wrapper2 {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 13% 8% auto 50%;
+    grid-template-columns: 20% 26.7% 26.7% 26.7%;
+    grid-template-areas:
+        'hd hd hd hd'
+        'nv nv nv nv'
+        'as sc sc2 sc3'
+        'ft ft ft ft'
+    ;
+}
+
+#main {
+    gap: 100px;
+}
+
+#section {
+    grid-area: sc;
+    margin-right: 10px;
+    margin-left: 20px;
+    background-color: rgb(255, 208, 121);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+#img1 {
+    height: 300px;
+    margin-top: 20px;
+}
+
+#section2 {
+    grid-area: sc2;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section3 {
+    grid-area: sc3;
+    margin-left: 10px;
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside {
+    grid-area: as;
+}
+
+aside ul {
+    background-color: rgb(249, 217, 157);
+    border-radius: 10px;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-top: 200px;
+}
+
+aside li {
+    padding-bottom: 20px;
+
 }
