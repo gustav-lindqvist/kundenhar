@@ -139,7 +139,7 @@ main p {
     margin-left: 16px;
 }
 
-img {
+#wrapper img {
     border-radius: 20px;
     box-shadow: 0 0 20px 8px rgb(242, 219, 181);
 }
@@ -228,29 +228,55 @@ footer h6 {
     gap: 100px;
 }
 
+
 #section {
     grid-area: sc;
     margin-right: 10px;
     margin-left: 20px;
-    background-color: rgb(255, 208, 121);
-
+    
+    background-color: rgb(249, 210, 139);
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+.title h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 7.5px;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.button {
+    background-color: brown;
+    font-size: 17px;
+    border-radius: 13px;
+    padding: 6px;
+}
 
 
+#wrapper2 img {
+    border-radius: 10px;
+}
 
-#img1 {
+#wrapper2 img {
     height: 300px;
     margin-top: 20px;
 }
+
 
 #section2 {
     grid-area: sc2;
     margin-left: 10px;
     margin-right: 10px;
+
+    background-color: rgb(249, 210, 139);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,6 +286,9 @@ footer h6 {
     grid-area: sc3;
     margin-left: 10px;
     margin-right: 20px;
+    
+    background-color: rgb(249, 210, 139);
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -279,4 +308,17 @@ aside ul {
 aside li {
     padding-bottom: 20px;
 
+}
+
+#wrapper3 {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 13% 8% auto 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'hd hd hd'
+        'nv nv nv'
+        'sc sc2 sc3'
+        'ft ft ft'
+    ;
 }
