@@ -259,7 +259,15 @@ footer h6 {
     border-radius: 13px;
     padding: 6px;
 }
-
+.button:hover {
+    border: 2px;
+    border-style: solid;
+    font-size: 16px;
+}
+.button:active {
+    background-color: rgba(165, 42, 42, 0.921);
+    font-size: 15px;
+}
 
 #wrapper2 img {
     border-radius: 10px;
@@ -321,4 +329,12 @@ aside li {
         'sc sc2 sc3'
         'ft ft ft'
     ;
+}
+#wrapper3 img {
+    border-radius: 10px;
+}
+
+#wrapper3 img {
+    height: 300px;
+    margin-top: 20px;
 }
